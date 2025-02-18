@@ -1,0 +1,546 @@
+{
+	"id": "3a57cd7e-b81e-4bfe-a05a-efd3c74dfbca",
+	"name": "ASK-TEST",
+	"timestamp": "2025-02-18T00:44:24.310Z",
+	"collection_id": "32596172-b81d9a35-5aaf-472e-ae96-4a225ee5fcd4",
+	"folder_id": 0,
+	"environment_id": "32596172-49f95810-8854-4832-98e6-ed6ea69e8e9b",
+	"totalPass": 29,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-02-18T00:44:15.494Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "9e71a03c-f885-4d10-ab07-145c066a7b53",
+			"name": "/sign-in-[T]",
+			"url": "http://ask-qa.portnov.com/api/v1/sign-in",
+			"time": 37,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true,
+				"verify user role = TEACHER": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"verify user role = TEACHER": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				37
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true,
+					"verify user role = TEACHER": true
+				}
+			]
+		},
+		{
+			"id": "9a0637d3-c541-47a0-9433-9586e2a4b7c6",
+			"name": "/sign-in[s]421 error",
+			"url": "http://ask-qa.portnov.com/api/v1/sign-in",
+			"time": 26,
+			"responseCode": {
+				"code": 421,
+				"name": "Misdirected Request"
+			},
+			"tests": {
+				"Status code is 421": true
+			},
+			"testPassFailCounts": {
+				"Status code is 421": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				26
+			],
+			"allTests": [
+				{
+					"Status code is 421": true
+				}
+			]
+		},
+		{
+			"id": "2eb0dfa3-36a8-4464-9348-f11b5ba16392",
+			"name": "/sign-in-[S]",
+			"url": "http://ask-qa.portnov.com/api/v1/sign-in",
+			"time": 24,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true,
+				"verify user role = STUDENT": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"verify user role = STUDENT": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				24
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true,
+					"verify user role = STUDENT": true
+				}
+			]
+		},
+		{
+			"id": "8725f08b-7a9a-43a1-b858-6d04cbb75e31",
+			"name": "/quiz - [T] - For test",
+			"url": "http://ask-qa.portnov.com/api/v1/quiz",
+			"time": 29,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				29
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "10089b4d-6550-4c3d-befd-39098b59b978",
+			"name": "/quiz-[T]-Update New Quiz",
+			"url": "http://ask-qa.portnov.com/api/v1/quiz",
+			"time": 28,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				28
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "eb2dec4f-1429-4c9b-a6df-5014017a6a13",
+			"name": "/quizzes-[T]-Return List of Quizzs.",
+			"url": "http://ask-qa.portnov.com/api/v1/quizzes",
+			"time": 262,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Verify quiz id on the list of quizzes": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify quiz id on the list of quizzes": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				262
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Verify quiz id on the list of quizzes": true
+				}
+			]
+		},
+		{
+			"id": "557cd1d3-7787-478c-8fb0-d2222b658e32",
+			"name": "/assignment - [T] -Assign new quiz.",
+			"url": "http://ask-qa.portnov.com/api/v1/assignment",
+			"time": 43,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true,
+				"Verify status, result, and gradeBy in assigned quiz": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify status, result, and gradeBy in assigned quiz": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				43
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true,
+					"Verify status, result, and gradeBy in assigned quiz": true
+				}
+			]
+		},
+		{
+			"id": "90c1c97c-56ae-4049-ae71-8c7d809782fb",
+			"name": "/assignments-[T] -Get List of Assignments",
+			"url": "http://ask-qa.portnov.com/api/v1/assignments",
+			"time": 2511,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Verify assignmentId on the list of assignments": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify assignmentId on the list of assignments": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2511
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Verify assignmentId on the list of assignments": true
+				}
+			]
+		},
+		{
+			"id": "23fe5619-5100-486a-ae00-983927d527c2",
+			"name": "/my-assignments - [S]",
+			"url": "http://ask-qa.portnov.com/api/v1/my-assignments",
+			"time": 87,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Verify assignmentId on the list of assignments": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify assignmentId on the list of assignments": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				87
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Verify assignmentId on the list of assignments": true
+				}
+			]
+		},
+		{
+			"id": "b0695172-3a30-4216-8a5b-9d61d35f9052",
+			"name": "/submit-assignment-[S]",
+			"url": "http://ask-qa.portnov.com/api/v1/submit-assignment",
+			"time": 109,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true,
+				"Verify status, result, and gradeBy after strudent submission": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify status, result, and gradeBy after strudent submission": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				109
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true,
+					"Verify status, result, and gradeBy after strudent submission": true
+				}
+			]
+		},
+		{
+			"id": "410b7251-98a4-4f78-a9b4-b2b42e29ee62",
+			"name": "/assignment/:assignmentId-[T]-Grades Assignment",
+			"url": "http://ask-qa.portnov.com/api/v1/assignment/37942",
+			"time": 4805,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Verify status, result, and gradeBy after manual grading": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify status, result, and gradeBy after manual grading": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4805
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Verify status, result, and gradeBy after manual grading": true
+				}
+			]
+		},
+		{
+			"id": "ed25b981-1442-44da-8549-b6273093989b",
+			"name": "/my-assignments - [S]",
+			"url": "http://ask-qa.portnov.com/api/v1/my-assignments",
+			"time": 28,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Verify status, result, and gradeBy after strudent submission": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify status, result, and gradeBy after strudent submission": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				28
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Verify status, result, and gradeBy after strudent submission": true
+				}
+			]
+		},
+		{
+			"id": "a10e5663-b196-46b1-bd47-2d0b46290904",
+			"name": "/quiz/:Id - [T]",
+			"url": "http://ask-qa.portnov.com/api/v1/quiz/34697",
+			"time": 24,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string - Quiz was deleted": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string - Quiz was deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				24
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string - Quiz was deleted": true
+				}
+			]
+		},
+		{
+			"id": "303787a5-5bae-4161-b92d-3e7176cfe75c",
+			"name": "/assignment/:assignment Id - [T]",
+			"url": "http://ask-qa.portnov.com/api/v1/assignment/184ac365-6eca-4098-9569-aad2fdeeb8bd",
+			"time": 29,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"message = Assignment was deleted": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"message = Assignment was deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				29
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"message = Assignment was deleted": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 8042,
+	"collection": {
+		"requests": [
+			{
+				"id": "9e71a03c-f885-4d10-ab07-145c066a7b53",
+				"method": "POST"
+			},
+			{
+				"id": "9a0637d3-c541-47a0-9433-9586e2a4b7c6",
+				"method": "POST"
+			},
+			{
+				"id": "2eb0dfa3-36a8-4464-9348-f11b5ba16392",
+				"method": "POST"
+			},
+			{
+				"id": "8725f08b-7a9a-43a1-b858-6d04cbb75e31",
+				"method": "POST"
+			},
+			{
+				"id": "10089b4d-6550-4c3d-befd-39098b59b978",
+				"method": "PUT"
+			},
+			{
+				"id": "eb2dec4f-1429-4c9b-a6df-5014017a6a13",
+				"method": "GET"
+			},
+			{
+				"id": "557cd1d3-7787-478c-8fb0-d2222b658e32",
+				"method": "POST"
+			},
+			{
+				"id": "90c1c97c-56ae-4049-ae71-8c7d809782fb",
+				"method": "GET"
+			},
+			{
+				"id": "23fe5619-5100-486a-ae00-983927d527c2",
+				"method": "GET"
+			},
+			{
+				"id": "b0695172-3a30-4216-8a5b-9d61d35f9052",
+				"method": "POST"
+			},
+			{
+				"id": "410b7251-98a4-4f78-a9b4-b2b42e29ee62",
+				"method": "PUT"
+			},
+			{
+				"id": "ed25b981-1442-44da-8549-b6273093989b",
+				"method": "GET"
+			},
+			{
+				"id": "a10e5663-b196-46b1-bd47-2d0b46290904",
+				"method": "DELETE"
+			},
+			{
+				"id": "303787a5-5bae-4161-b92d-3e7176cfe75c",
+				"method": "DELETE"
+			}
+		]
+	}
+}
